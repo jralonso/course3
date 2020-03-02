@@ -19,7 +19,7 @@ pipeline {
       steps {
         withAWS(region: 'us-west-2', credentials: 'jra-udacity-c3') {
           sh 'echo "Uploading content with AWS creds"'
-          s3Upload(pathStyleAccessEnabled: true, payloadSigningEnabled: true, file: 'index.html', bucket: 'course3-static-jenkins-pipeline-test')
+          s3Upload(pathStyleAccessEnabled: true, payloadSigningEnabled: true, file: 'index.html', bucket: 'course3-static-jenkins-pipeline-master')
         }
 
       }

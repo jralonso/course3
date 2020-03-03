@@ -17,8 +17,7 @@ pipeline {
       }
     }
     stage('Create EC2 Instance') {
-      steps {
-        
+      steps {        
         ansiblePlaybook playbook: 'main.yaml'
       }
     }

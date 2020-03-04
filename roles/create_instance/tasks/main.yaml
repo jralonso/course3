@@ -22,6 +22,8 @@
     group_id:
       - sg-0dc968751ea776a86
       - sg-0a30f07df36f91819
+    vpc_subnet_id:
+      - subnet-0e3eb4d01e8727608
     wait: yes
     instance_tags:
       Name: web_server
